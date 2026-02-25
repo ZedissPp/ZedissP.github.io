@@ -49,11 +49,7 @@ header{
   font-weight:600;
 }
 
-nav{
-  position:relative;
-  display:flex;
-  gap:24px;
-}
+
 
 nav a{
   text-decoration:none;
@@ -141,6 +137,8 @@ section{
 
 .card-content{
   padding:24px;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
 }
 
 .chip{
@@ -151,11 +149,14 @@ section{
   color:#c3fdb5;
   font-size:13px;
   margin-bottom:12px;
+  white-space:nowrap;
 }
 
 .card h3{
   font-size:20px;
   margin-bottom:8px;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
 }
 
 .author{
@@ -165,6 +166,7 @@ section{
   font-size:14px;
   color:var(--on-surface-variant);
   margin-bottom:20px;
+  flex-wrap:wrap;
 }
 
 /* BUTTON */
@@ -222,4 +224,42 @@ footer{
   text-align:center;
   padding:32px;
   color:var(--on-surface-variant);
+}
+
+/* THEME TOGGLE */
+
+.theme-toggle{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:transparent;
+  border:1px solid var(--outline);
+  color:var(--on-surface-variant);
+  cursor:pointer;
+  transition:all .3s var(--motion);
+  flex-shrink:0;
+}
+
+.theme-toggle:hover{
+  background:var(--surface-container-high);
+  color:var(--on-surface);
+}
+
+nav{
+  display:flex;
+  gap:24px;
+}
+
+/* LIGHT MODE */
+
+body.light-mode{
+  --surface:#f5f5f5;
+  --surface-container:#ffffff;
+  --surface-container-high:#eeeeee;
+  --outline:#e0e0e0;
+  --on-surface:#1a1a1a;
+  --on-surface-variant:#666666;
 }

@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangkk Roms</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-light: #3b82f6;
+      --background: #0f172a;
+      --surface: #111827;
+      --surface-2: #1f2937;
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --success: #22c55e;
+    }* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(15,23,42,0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  background: linear-gradient(90deg, var(--primary-light), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav a {
+  margin-left: 28px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: var(--primary-light);
+}
+
+.hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #ffffff, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--success);
+  font-size: 13px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+}
+
+.downloads {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  border-left: 4px solid var(--primary);
+  padding-left: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.banner {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: var(--primary-light);
+  border: 1px solid var(--border);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.author svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--primary-light);
+}
+
+.meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--primary-light);
+}
+
+.about {
+  margin-top: 100px;
+  padding: 80px 20px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  background: var(--background);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+  </style>
+</head>
+<body><header>
+  <div class="logo">Bangkk Roms</div>
+  <nav>
+    <a href="#downloads">ROMS</a>
+    <a href="#about">Sobre</a>
+  </nav>
+</header><section class="hero">
+  <div class="badge">Moto G84 Firmware Repository</div>
+  <h1>Um lugar seguro para baixar roms para o seu celular</h1>
+</section><section class="downloads" id="downloads">
+  <div class="section-title">Roms Disponíveis</div>
+  <div class="grid"><div class="card">
+  <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY84U_Dj6Ruzo3jhwBQ3E5FuhrMu_GXp5ecT0UeI_lE85gPce8Yq67Bt5L&s=10" alt="Pixel OS Banner">
+  <div class="card-content">
+    <div class="chip">Android 16</div>
+    <h3>Pixel OS</h3>
+
+    <div class="author">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+      </svg>
+      <span>Akari</span>
+    </div>
+
+    <a class="btn" href="https://pixeldrain.com/l/cvfSK7hx" target="_blank">Download</a>
+  </div>
+</div>
+
+<div class="card">
+  <img class="banner" src="https://i.ibb.co/Gv7HzdGW/2-Sem-T-tulo-20260224233658.jpg" alt="Stock ROM Banner">
+  <div class="card-content">
+    <div class="chip">Android 16</div>
+    <h3>Yaap</h3>
+
+    <div class="author">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+      </svg>
+      <span>BarryBlackCat</span>
+    </div>
+
+    <a class="btn" href="https://drive.google.com/drive/folders/168gYS4U4q4c22HqsHxjgCd9ob18r_DQO?usp=drive_link" target="_blank">Download</a>
+  </div>
+</div>
+
+  </div>
+</section><section class="about" id="about">
+  <h2>Sobre</h2>
+  <p>
+    Desenvolvido por <strong style="color:#60a5fa">ZedissP</strong>, Um site pessoal para disponibilizar e hospedar custom roms específicamente para o Moto G84 - Bangkk.
+  </p>
+</section><footer>
+  2026 • Bangkk Roms
+</footer></body>
+</html>

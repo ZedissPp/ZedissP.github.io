@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,264 +8,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet"/>
 
-<style>
-:root{
-  --primary:#7c3aed;
-  --surface:#0f1115;
-  --surface-container:#161a22;
-  --surface-container-high:#1d222c;
-  --outline:#2a2f3a;
-  --on-surface:#e6e1e5;
-  --on-surface-variant:#a9a3b0;
-  --radius:28px;
-  --motion:cubic-bezier(.2,0,0,1);
-}
+<link rel="stylesheet" href="style.css"/>
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Google Sans',sans-serif;
-  scroll-behavior:smooth;
-}
-
-body{
-  background:var(--surface);
-  color:var(--on-surface);
-}
-
-/* HEADER */
-
-header{
-  position:sticky;
-  top:0;
-  background:var(--surface-container);
-  border-bottom:1px solid var(--outline);
-  z-index:100;
-  backdrop-filter:blur(12px);
-  transition:background .3s var(--motion);
-}
-
-.header-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:16px 24px;
-  max-width:1200px;
-  margin:auto;
-}
-
-.logo{
-  font-size:20px;
-  font-weight:600;
-}
-
-nav{
-  position:relative;
-  display:flex;
-  gap:24px;
-}
-
-nav a{
-  text-decoration:none;
-  color:var(--on-surface-variant);
-  font-weight:500;
-  padding:8px 4px;
-  position:relative;
-  transition:color .3s var(--motion);
-}
-
-nav a.active{
-  color:var(--on-surface);
-}
-
-.indicator{
-  position:absolute;
-  bottom:-2px;
-  height:3px;
-  background:var(--primary);
-  border-radius:10px;
-  transition:all .4s var(--motion);
-}
-
-/* HERO */
-
-.hero{
-  padding:80px 24px 48px;
-  text-align:center;
-  max-width:900px;
-  margin:auto;
-  animation:fadeUp .6s var(--motion);
-}
-
-@keyframes fadeUp{
-  from{opacity:0;transform:translateY(20px);}
-  to{opacity:1;transform:translateY(0);}
-}
-
-/* SECTION */
-
-section{
-  scroll-margin-top:100px;
-}
-
-.downloads{
-  max-width:1200px;
-  margin:72px auto;
-  padding:0 24px;
-}
-
-.section-title{
-  font-size:28px;
-  margin-bottom:32px;
-}
-
-/* GRID */
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-  gap:32px;
-}
-
-/* CARD */
-
-.card{
-  background:var(--surface-container);
-  border-radius:var(--radius);
-  border:1px solid var(--outline);
-  overflow:hidden;
-  transition:all .3s var(--motion);
-}
-
-.card:hover{
-  transform:translateY(-6px);
-  background:var(--surface-container-high);
-  box-shadow:0 16px 40px rgba(0,0,0,.4);
-}
-
-.banner{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-}
-
-.card-content{
-  padding:24px;
-}
-
-.chip{
-  display:inline-block;
-  padding:6px 14px;
-  border-radius:100px;
-  background:rgba(124,58,237,.15);
-  color:#c4b5fd;
-  font-size:13px;
-  margin-bottom:12px;
-}
-
-.card h3{
-  font-size:20px;
-  margin-bottom:8px;
-}
-
-.author{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  font-size:14px;
-  color:var(--on-surface-variant);
-  margin-bottom:20px;
-}
-
-/* BUTTON */
-
-.btn{
-  position:relative;
-  overflow:hidden;
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  padding:14px 26px;
-  border-radius:100px;
-  background:var(--primary);
-  color:white;
-  text-decoration:none;
-  font-weight:500;
-  transition:.2s var(--motion);
-}
-
-.btn:hover{
-  filter:brightness(1.1);
-}
-
-/* Ripple */
-.btn::after{
-  content:"";
-  position:absolute;
-  background:rgba(255,255,255,.4);
-  width:0;
-  height:0;
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  top:50%;
-  left:50%;
-  opacity:0;
-}
-
-.btn:active::after{
-  width:300px;
-  height:300px;
-  opacity:0;
-  transition:0s;
-}
-
-/* ABOUT */
-
-.about{
-  margin-top:96px;
-  padding:80px 24px;
-  background:var(--surface-container);
-  text-align:center;
-}
-
-footer{
-  text-align:center;
-  padding:32px;
-  color:var(--on-surface-variant);
-}
-
-</style>
 </head>
 <body>
 
 <header>
   <div class="header-inner">
-    <div class="logo">Bangkk Roms</div>
+    <div class="logo">BANGKK SUPPORT</div>
     <nav id="nav">
-      <a href="#downloads">Roms</a>
-      <a href="#about">Sobre</a>
+      <a href="#downloads">ROM</a>
+      <a href="#about">ABOUT</a>
       <div class="indicator"></div>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <h1>Custom Roms Bangkk</h1>
-</section>
-
 <section class="downloads" id="downloads">
-  <div class="section-title">Roms oficiais - Não oficiais</div>
+  <div class="section-title">ROMS</div>
   <div class="grid">
 
     <div class="card">
-      <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY84U_Dj6Ruzo3jhwBQ3E5FuhrMu_GXp5ecT0UeI_lE85gPce8Yq67Bt5L&s=10">
+      <img class="banner" src="/img/pixelos.png">
       <div class="card-content">
         <div class="chip">Android 16</div>
-        <h3>Pixel OS</h3>
+        <h3>PIXEL OS</h3>
+        <p>UNOFFICIAL</p>
         <div class="author">
           <span class="material-symbols-rounded">person</span>
-          Akari
+          AKARI
         </div>
         <a class="btn" href="https://pixeldrain.com/l/cvfSK7hx" target="_blank">
           <span class="material-symbols-rounded">download</span>
@@ -275,13 +46,14 @@ footer{
     </div>
     
    <div class="card">
-      <img class="banner" src="https://i.ibb.co/Gv7HzdGW/2-Sem-T-tulo-20260224233658.jpg">
+      <img class="banner" src="/img/yaap.jpg">
       <div class="card-content">
         <div class="chip">Android 16</div>
-        <h3>Yaap</h3>
+        <h3>YAAP</h3>
+        <p>UNOFFICIAL</p>
         <div class="author">
           <span class="material-symbols-rounded">person</span>
-          BarryBlackCat
+          BARRY BLACK CAT
         </div>
         <a class="btn" href="https://drive.google.com/drive/folders/168gYS4U4q4c22HqsHxjgCd9ob18r_DQO?usp=drive_link" target="_blank">
           <span class="material-symbols-rounded">download</span>
@@ -291,13 +63,14 @@ footer{
     </div>
     
        <div class="card">
-      <img class="banner" src="https://i.ibb.co/ZpPCn5fs/IMG-20260225-005605-532.jpg">
+      <img class="banner" src="/img/pdroid.jpg">
       <div class="card-content">
         <div class="chip">Android 16</div>
-        <h3>Panda Droid</h3>
+        <h3>PANDA DROID</h3>
+        <p>UNOFFICIAL</p>
         <div class="author">
           <span class="material-symbols-rounded">person</span>
-          Vishal X NotKerd
+          VISHAL X NOTKERD
         </div>
         <a class="btn" href="https://drive.serverhive.in/drive/dTKUlLQvWDC6MYNkpqPDvipA/bangkk/2025-12-26/PDroid-bangkk-Milky-ota-bp4a.251205.006-REL.12260157.zip" target="_blank">
           <span class="material-symbols-rounded">download</span>
@@ -308,13 +81,14 @@ footer{
     
   <div class="grid">
        <div class="card">
-      <img class="banner" src="https://t2.tudocdn.net/704209?w=776&h=338">
+      <img class="banner" src="/img/lineage.webp">
       <div class="card-content">
         <div class="chip">Android 16</div>
-        <h3>Lineage OS</h3>
+        <h3>LINEAGE OS</h3>
+        <p>OFFICIAL</p>
         <div class="author">
           <span class="material-symbols-rounded">person</span>
-          LineageOSTeam
+          LINEAGE OS TEAM
         </div>
         <a class="btn" href="https://download.lineageos.org/devices/bangkk/builds" target="_blank">
           <span class="material-symbols-rounded">download</span>
@@ -327,36 +101,14 @@ footer{
 </section>
 
 <section class="about" id="about">
-  <h2>Sobre</h2>
-  <p>Repositório de custom roms para o Moto G84.</p>
+  <p>Roms, Kernels, Gcam and more. All for your!.</p>
 </section>
 
 <footer>
-  2026 • Bangkk Roms
+  Bangkk Support by ZedissP - 2026
 </footer>
 
-<script>
-const navLinks=document.querySelectorAll("nav a");
-const indicator=document.querySelector(".indicator");
-
-function updateIndicator(el){
-  indicator.style.width=el.offsetWidth+"px";
-  indicator.style.left=el.offsetLeft+"px";
-}
-
-navLinks.forEach(link=>{
-  link.addEventListener("click",()=>{
-    navLinks.forEach(l=>l.classList.remove("active"));
-    link.classList.add("active");
-    updateIndicator(link);
-  });
-});
-
-window.addEventListener("load",()=>{
-  updateIndicator(navLinks[0]);
-  navLinks[0].classList.add("active");
-});
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>

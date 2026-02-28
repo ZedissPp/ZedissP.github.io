@@ -1,11 +1,11 @@
 :root{
-  --primary:hsl(140, 96%, 19%);
-  --surface:#0f150f;
-  --surface-container:#162218;
-  --surface-container-high:#1d2c22;
-  --outline:#2a3a2d;
-  --on-surface:#e1e6e4;
-  --on-surface-variant:#93a199;
+  --primary:hsl(197, 96%, 19%);
+  --surface:#0f1315;
+  --surface-container:#161c22;
+  --surface-container-high:#1d262c;
+  --outline:#2a313a;
+  --on-surface:#e1e2e6;
+  --on-surface-variant:#9399a1;
   --radius:28px;
   --motion:cubic-bezier(.2,0,0,1);
 }
@@ -45,7 +45,7 @@ header{
 }
 
 .logo{
-  font-size:20px;
+  font-size:15px;
   font-weight:600;
 }
 
@@ -80,7 +80,7 @@ nav a.active{
   text-align:center;
   max-width:900px;
   margin:auto;
-  animation:fadeUp .6s var(--motion);
+  animation:fadeUp .9s var(--motion);
 }
 
 @keyframes fadeUp{
@@ -96,12 +96,12 @@ section{
 
 .downloads{
   max-width:1200px;
-  margin:72px auto;
+  margin:90px auto;
   padding:0 24px;
 }
 
 .section-title{
-  font-size:28px;
+  font-size:25px;
   margin-bottom:32px;
 }
 
@@ -118,7 +118,7 @@ section{
 .card{
   background:var(--surface-container);
   border-radius:var(--radius);
-  border:1px solid var(--outline);
+  border:3px solid var(--outline);
   overflow:hidden;
   transition:all .3s var(--motion);
 }
@@ -145,8 +145,8 @@ section{
   display:inline-block;
   padding:6px 14px;
   border-radius:100px;
-  background:rgba(204, 237, 58, 0.15);
-  color:#c3fdb5;
+  background:rgba(58, 58, 58, 0.425);
+  color:lch(100% 0.01 296.81);
   font-size:13px;
   margin-bottom:12px;
   white-space:nowrap;

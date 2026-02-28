@@ -28,10 +28,10 @@ body{
 header{
   position:sticky;
   top:0;
-  background:var(--surface-container);
+  background:rgba(0,0,0,.25);
   border-bottom:1px solid var(--outline);
   z-index:100;
-  backdrop-filter:blur(12px);
+  backdrop-filter:blur(16px);
   transition:background .3s var(--motion);
 }
 
@@ -107,14 +107,14 @@ section{
   bottom:16px;
   left:50%;
   transform:translateX(-50%);
-  background:var(--surface-container);
+  background:rgba(255,255,255,.15);
   border:1px solid var(--outline);
   border-radius:999px;
   display:flex;
   justify-content:center;
   align-items:center;
   padding:8px 24px;
-  backdrop-filter:blur(12px);
+  backdrop-filter:blur(20px);
   z-index:100;
   /* width auto to size to content */
   max-width:calc(100% - 32px);
@@ -186,8 +186,9 @@ section{
 
 .card:hover{
   transform:translateY(-6px);
-  background:var(--surface-container-high);
+  background:rgba(255,255,255,.05);
   box-shadow:0 16px 40px rgba(0,0,0,.4);
+  backdrop-filter:blur(8px);
 }
 
 .banner{
@@ -277,7 +278,8 @@ section{
 .about{
   margin-top:96px;
   padding:80px 24px;
-  background:var(--surface-container);
+  background:rgba(255,255,255,.1);
+  backdrop-filter:blur(12px);
   text-align:center;
 }
 

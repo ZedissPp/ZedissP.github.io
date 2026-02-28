@@ -35,7 +35,8 @@ function initializeTheme(){
 }
 
 function initializeNav(){
-  const navLinks=document.querySelectorAll("nav a");
+  // only target the primary nav used for page sections
+  const navLinks=document.querySelectorAll("#nav a");
   const indicator=document.querySelector(".indicator");
   
   if(!indicator||navLinks.length===0)return;
@@ -51,6 +52,12 @@ function initializeNav(){
       this.classList.add("active");
       updateIndicator(this);
     });
+  });
+  
+  // reposition indicator on resize in case layout changes
+  window.addEventListener('resize',()=>{
+    const active=document.querySelector('#nav a.active');
+    if(active) updateIndicator(active);
   });
   
   updateIndicator(navLinks[0]);

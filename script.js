@@ -64,6 +64,22 @@ function initializeNav(){
   navLinks[0].classList.add("active");
 }
 
+// scroll-to-top button logic
+(function(){
+  const btn=document.getElementById('scroll-top');
+  if(!btn) return;
+  window.addEventListener('scroll',()=>{
+    if(window.scrollY>200){
+      btn.classList.add('show');
+    }else{
+      btn.classList.remove('show');
+    }
+  });
+  btn.addEventListener('click',()=>{
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+
 if(document.readyState==="loading"){
   document.addEventListener("DOMContentLoaded",()=>{
     initializeTheme();
